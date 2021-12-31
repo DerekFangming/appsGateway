@@ -1,29 +1,6 @@
 
-#spring:
-#  application:
-#    name: apps-gateway
-#  main:
-#    web-application-type: reactive
-#    allow-bean-definition-overriding: true
-#  cloud:
-#    gateway:
-#      routes:
-#      - id: baeldung
-#        uri: http://localhost:9001
-#        predicates:
-#          - Path=/poll/**
-#        filters:
-#          - StripPrefix=1
-#            spring.main.web-application-type=reactive
-
 zuul:
   routes:
-    poll:
+    card:
       path: /poll/**
       url: http://localhost:9001
-    poll1:
-      path: /poll1/**
-      url: http://localhost:9001
-    poll2:
-      path: /haha
-      url: ws://localhost:8085
