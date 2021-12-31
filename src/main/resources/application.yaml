@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: apps-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+      - id: baeldung
+        uri: http://localhost:9001
+        predicates:
+          - Path=/poll/**
+        filters:
+          - StripPrefix=1
