@@ -5,7 +5,7 @@ on:
 
 jobs:
   check-reviewers:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
       - name: check reviewers on pull request review trigger
         uses:  DerekFangming/actiontest@main
