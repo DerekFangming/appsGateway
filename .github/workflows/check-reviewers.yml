@@ -1,0 +1,11 @@
+name: check reviewers workflow.
+on:
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+
+jobs:
+  check-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check reviewers on pull request review trigger
+        uses:  DerekFangming/actiontest@main
