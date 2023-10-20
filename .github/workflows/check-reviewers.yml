@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: check reviewers on pull request review trigger
-        uses:  DerekFangming/actiontest@main
+        uses: actions/checkout@v3
+        with:
+          repository: DerekFangming/actiontest
