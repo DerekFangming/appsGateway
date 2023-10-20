@@ -1,7 +1,6 @@
 name: check reviewers workflow.
 on:
-  pull_request_review:
-    types: [submitted, edited, dismissed]
+  pull_request:
 
 jobs:
   check-reviewers:
